@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O quanto você me conhece?</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Tela Inicial -->
+    <div id="inicio" class="tela">
+        <div class="card">
+            <h1>🧠 O quanto você me conhece?</h1>
+
+            <p>
+                Responda às 30 perguntas e descubra o quanto você realmente
+                sabe sobre mim.
+            </p>
+
+            <button id="btnComecar">
+                Começar
+            </button>
+        </div>
+    </div>
+
+    <!-- Tela do Quiz -->
+    <div id="quiz" class="tela escondido">
+
+        <div class="card">
+
+            <div class="topo">
+
+                <p id="contador">
+                    Pergunta 1 de 30
+                </p>
+
+                <div class="barra">
+                    <div id="progresso"></div>
+                </div>
+
+            </div>
+
+            <h2 id="pergunta">
+                Pergunta aqui
+            </h2>
+
+            <div id="alternativas">
+
+            </div>
+
+            <button id="btnProxima" class="escondido">
+                Próxima →
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Tela Final -->
+    <div id="final" class="tela escondido">
+
+        <div class="card">
+
+            <h1>🎉 Quiz Finalizado!</h1>
+
+            <h2 id="pontuacao">
+                Você acertou 0 de 30
+            </h2>
+
+            <p id="mensagemFinal"></p>
+
+            <button id="btnRecompensa">
+                🎁 Ver recompensa
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Tela da Imagem -->
+    <div id="recompensa" class="tela escondido">
+
+        <div class="card">
+
+            <h1>❤️ Sua recompensa</h1>
+
+            <img
+                src="recompensa.jpg"
+                alt="Recompensa"
+                id="imagemFinal"
+            >
+
+            <br><br>
+
+            <button onclick="location.reload()">
+                Jogar novamente
+            </button>
+
+        </div>
+
+    </div>
+
+<script src="perguntas.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
